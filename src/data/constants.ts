@@ -2,7 +2,9 @@ import { env } from "~/env";
 
 export const SITE_CONFIG = {
   title: "Katalis",
-  description: "",
+  headline: "Cara blogging dengan mudah dan simple",
+  description:
+    "Katalis adalah aplikasi yang membantumu blogging dengan mudah dan simple",
   url:
     env.NODE_ENV === "production"
       ? process.env.VERCEL_URL!
@@ -20,6 +22,6 @@ export const SITE_CONFIG = {
   },
   author: {
     name: "aazis7",
-    url: "https://github.com/aazis7"
+    url: "https://github.com/aazis7",
   },
 } as const;
