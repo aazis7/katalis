@@ -5,10 +5,6 @@ export const SITE_CONFIG = {
   headline: "Cara blogging dengan mudah dan simple",
   description:
     "Katalis adalah aplikasi yang membantumu blogging dengan mudah dan simple",
-  url:
-    env.NODE_ENV === "production"
-      ? process.env.VERCEL_URL!
-      : "http://localhost:3000",
   og: {
     title: "Katalis",
     author: "aazis7",

@@ -8,7 +8,6 @@ import { TRPCReactProvider } from "~/trpc/react";
 import { SITE_CONFIG } from "~/data/constants";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_CONFIG.url),
   title: {
     template: `%s | ${SITE_CONFIG.title}`,
     default: `${SITE_CONFIG.title} — ${SITE_CONFIG.headline}`,
