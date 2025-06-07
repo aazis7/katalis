@@ -3,6 +3,7 @@
 import * as React from "react";
 import { cn } from "~/lib/utils";
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface MaxWidthWrapperProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const MaxWidthWrapper: React.FC<MaxWidthWrapperProps> = ({
