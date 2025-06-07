@@ -1,10 +1,9 @@
-import { drizzle } from "drizzle-orm/neon-http";
-import { neon, neonConfig } from "@neondatabase/serverless"
+import { neon, neonConfig } from '@neondatabase/serverless';
+import { env } from '~/env';
+import { drizzle } from 'drizzle-orm/neon-http';
+import ws from 'ws';
 
-import { env } from "~/env";
-import * as schema from "./schema";
-
-import ws from "ws";
+import * as schema from './schema';
 
 neonConfig.webSocketConstructor = ws;
 
@@ -13,15 +12,15 @@ neonConfig.webSocketConstructor = ws;
  * update.
  */
 
-type DB = ReturnType<typeof drizzle<typeof schema>>
+type DB = ReturnType<typeof drizzle<typeof schema>>;
 
 const globalForDb = globalThis as unknown as {
   db: DB | undefined;
 };
 
-const sql = neon(env.DATABASE_URL)
-const db = drizzle({ client: sql, schema })
+const sql = neon(env.DATABASE_URL);
+const db = drizzle({ client: sql, schema });
 
-if (env.NODE_ENV !== "production") globalForDb.db = db
+if (env.NODE_ENV !== 'production') globalForDb.db = db;
 
-export { db }
+export { db };

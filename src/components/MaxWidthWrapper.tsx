@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import { cn } from "~/lib/utils";
+import { cn } from '~/lib/utils';
+import * as React from 'react';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface MaxWidthWrapperProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -13,7 +13,7 @@ export const MaxWidthWrapper: React.FC<MaxWidthWrapperProps> = ({
   return (
     <div
       className={cn(
-        "max-w-breakpoint-3xl mx-auto px-4 py-6 lg:px-6 lg:py-8",
+        'max-w-breakpoint-3xl mx-auto px-4 py-6 lg:px-6 lg:py-8',
         className,
       )}
       {...props}

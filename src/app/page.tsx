@@ -1,9 +1,8 @@
-import Link from "next/link";
-
-import { api, HydrateClient } from "~/trpc/server";
+import { api, HydrateClient } from '~/trpc/server';
+import Link from 'next/link';
 
 export default async function Home() {
-  const hello = await api.post.hello({ text: "dari tRPC" });
+  const hello = await api.post.hello({ text: 'dari tRPC' });
 
   void api.post.getLatest.prefetch();
 
@@ -13,7 +12,7 @@ export default async function Home() {
         <div className="max-w-xl text-center">
           <div className="flex flex-col items-center gap-2">
             <p className="text-2xl text-white">
-              {hello ? hello.greeting : "Loading tRPC query..."}
+              {hello ? hello.greeting : 'Loading tRPC query...'}
             </p>
           </div>
           <h1 className="mb-4 text-4xl font-bold sm:text-5xl">Katalis</h1>

@@ -1,5 +1,5 @@
-import { SignIn as ClerkSignIn } from "@clerk/nextjs";
-import { MaxWidthWrapper } from "~/components/MaxWidthWrapper";
+import { SignIn as ClerkSignIn } from '@clerk/nextjs';
+import { MaxWidthWrapper } from '~/components/MaxWidthWrapper';
 
 export default function SignIn() {
   return (

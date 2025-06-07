@@ -1,11 +1,10 @@
-import "~/styles/globals.css";
+import '~/styles/globals.css';
 
-import { type Metadata } from "next";
-import { Geist } from "next/font/google";
-
-import { ClerkProvider } from "@clerk/nextjs";
-import { TRPCReactProvider } from "~/trpc/react";
-import { SITE_CONFIG } from "~/data/constants";
+import { ClerkProvider } from '@clerk/nextjs';
+import { SITE_CONFIG } from '~/data/constants';
+import { TRPCReactProvider } from '~/trpc/react';
+import { type Metadata } from 'next';
+import { Geist } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: SITE_CONFIG.og.title,
-    type: "website",
+    type: 'website',
     images: [SITE_CONFIG.og.image],
   },
   twitter: {
@@ -33,8 +32,8 @@ export const metadata: Metadata = {
 };
 
 const geist = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
+  subsets: ['latin'],
+  variable: '--font-geist-sans',
 });
 
 export default function RootLayout({

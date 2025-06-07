@@ -74,12 +74,8 @@
           "name": "katalis_comment_user_id_katalis_user_id_fk",
           "tableFrom": "katalis_comment",
           "tableTo": "katalis_user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "no action",
           "onUpdate": "no action"
         },
@@ -87,12 +83,8 @@
           "name": "katalis_comment_post_id_katalis_post_id_fk",
           "tableFrom": "katalis_comment",
           "tableTo": "katalis_post",
-          "columnsFrom": [
-            "post_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["post_id"],
+          "columnsTo": ["id"],
           "onDelete": "no action",
           "onUpdate": "no action"
         }
@@ -161,12 +153,8 @@
           "name": "katalis_post_author_id_katalis_user_id_fk",
           "tableFrom": "katalis_post",
           "tableTo": "katalis_user",
-          "columnsFrom": [
-            "author_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["author_id"],
+          "columnsTo": ["id"],
           "onDelete": "no action",
           "onUpdate": "no action"
         }
@@ -236,9 +224,7 @@
         "katalis_user_clerk_id_unique": {
           "name": "katalis_user_clerk_id_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "clerk_id"
-          ]
+          "columns": ["clerk_id"]
         }
       },
       "policies": {},
